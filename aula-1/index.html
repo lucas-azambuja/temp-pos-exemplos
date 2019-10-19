@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        h1 {
+            color: blue
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1> Olá, mundo! </h1>
+
+    <form id="formulario">
+        <div class="grupo">
+            <label for="iNome"> Nome </label>
+            <input name="iNome" id="iNome" placeholder="Digite o nome" type="text">
+        </div>
+        <div class="grupo">
+            <label for="iPeso"> Peso </label>
+            <input name="iPeso" id="iPeso" placeholder="Digite o peso" type="number">
+        </div>
+        <div class="grupo">
+            <label for="iAltura"> Altura </label>
+            <input name="iAltura" id="iAltura" placeholder="Digite o nome" type="number" step=".01">
+        </div>
+
+        <button id="bAdicionar">Adicionar</button>
+    </form>
+    <hr>
+    <table id="tabela">
+        <thead>            
+            <tr>
+                <th class=""> Nome </th>
+                <th> Peso </th>
+                <th> Altura </th>
+                <th> IMC </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="paciente">
+                <td class="info-nome"> Lucas </td>
+                <td class="info-peso"> 80 </td>
+                <td class="info-altura"> 1.70 </td>
+                <td class="info-imc"> </td>
+            </tr>
+            <tr class="paciente">
+                <td class="info-nome"> João </td>
+                <td class="info-peso"> 500 </td>
+                <td class="info-altura"> 1.50 </td>
+                <td class="info-imc"> </td>
+            </tr>
+            <tr class="paciente">
+                <td class="info-nome"> Maria </td>
+                <td class="info-peso"> 75 </td>
+                <td class="info-altura"> 1.68 </td>
+                <td class="info-imc"> </td>
+            </tr>
+            <tr class="paciente">
+                <td class="info-nome"> José </td>
+                <td class="info-peso"> 506 </td>
+                <td class="info-altura"> -1.78 </td>
+                <td class="info-imc"> </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="imc.js"></script>
+</body>
+</html>
