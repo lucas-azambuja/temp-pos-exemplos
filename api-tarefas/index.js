@@ -89,7 +89,9 @@ app.patch('/api/:username/tarefas/:id', (req, res) => {
     }
 
     const tarefa = tarefas.find(x => x.id == id)
-    tarefa.feito = feito || tarefa.feito
+    if (typeod(feito) === 'boolean') {
+        tarefa.feito = feito
+    }
     tarefa.descricao = descricao || tarefa.descricao
 
     res.json({
