@@ -1,6 +1,9 @@
 const express = require('express')
+const cors = require('cors')
 
 const app = express()
+app.use(cors())
+app.options('*', cors())
 app.use(express.json())
 
 const db = {}
@@ -97,4 +100,4 @@ app.patch('/api/:username/tarefas/:id', (req, res) => {
     })
 })
 
-app.listen(3000)
+app.listen(process.env.PORT || 3001)
